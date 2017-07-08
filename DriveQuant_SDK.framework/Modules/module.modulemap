@@ -1,0 +1,10 @@
+framework module DriveQuant_SDK {
+  umbrella header "DriveQuant_SDK.h"
+
+  export *
+  module * { export * }
+}
+
+module DriveQuant_SDK.Swift {
+    header "DriveQuant_SDK-Swift.h"
+}
