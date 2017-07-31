@@ -288,11 +288,13 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK19ItineraryStatistics")
 @interface NSNumber (SWIFT_EXTENSION(DriveQuant_SDK))
 @end
 
+@class RouteData;
 
 SWIFT_PROTOCOL("_TtP14DriveQuant_SDK19PostGenericProtocol_")
 @protocol PostGenericProtocol
 - (void)handleResult:(BOOL)status response:(PostGenericResponse * _Nullable)response route:(Route * _Nonnull)route itineraryData:(ItineraryData * _Nonnull)itineraryData;
 - (void)handleRouteData:(double)distance speed:(double)speed accel:(double)accel maintain:(double)maintain decel:(double)decel efficiency:(double)efficiency recommendedGearbox:(NSInteger)recommendedGearbox duration:(double)duration speedMean:(double)speedMean co2:(double)co2 energyClass:(NSInteger)energyClass longitude:(double)longitude latitude:(double)latitude gpsElevation:(double)gpsElevation gpsAccuracy:(double)gpsAccuracy gpsHeading:(double)gpsHeading;
+- (void)handleRouteDataWithRouteData:(RouteData * _Nonnull)routeData;
 - (void)autoTripStarted;
 @end
 
@@ -342,6 +344,31 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK5Route")
 - (id _Nonnull)getVehWheelAngle SWIFT_WARN_UNUSED_RESULT;
 - (void)setVehDate:(NSArray<NSNumber *> * _Nonnull)vehDate;
 - (id _Nonnull)getVehDate SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC14DriveQuant_SDK9RouteData")
+@interface RouteData : NSObject
+@property (nonatomic) double distance;
+@property (nonatomic) double speed;
+@property (nonatomic) double accel;
+@property (nonatomic) double maintain;
+@property (nonatomic) double decel;
+@property (nonatomic) double efficiency;
+@property (nonatomic) NSInteger recommendedGearbox;
+@property (nonatomic) double duration;
+@property (nonatomic) double speedMean;
+@property (nonatomic) double co2;
+@property (nonatomic) double co2Opti;
+@property (nonatomic) NSInteger energyClass;
+@property (nonatomic) double longitude;
+@property (nonatomic) double latitude;
+@property (nonatomic) double gpsElevation;
+@property (nonatomic) double gpsAccuracy;
+@property (nonatomic) double gpsHeading;
+@property (nonatomic) NSInteger ringMin;
+@property (nonatomic) NSInteger ringMax;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
