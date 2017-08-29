@@ -7,4 +7,5 @@ framework module DriveQuant_SDK {
 
 module DriveQuant_SDK.Swift {
     header "DriveQuant_SDK-Swift.h"
+    requires objc
 }
