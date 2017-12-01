@@ -273,6 +273,12 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK19ItineraryStatistics")
 @end
 
 
+SWIFT_CLASS("_TtC14DriveQuant_SDK7Logbook")
+@interface Logbook : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
 
 @class RouteData;
 
