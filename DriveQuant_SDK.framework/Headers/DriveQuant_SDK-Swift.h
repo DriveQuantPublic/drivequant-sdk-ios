@@ -211,6 +211,12 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK14AdvancedSafety")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
 
+
+SWIFT_CLASS("_TtC14DriveQuant_SDK9BrakeWear")
+@interface BrakeWear : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class PostGenericResponse;
 @class Route;
 @class ItineraryData;
@@ -280,6 +286,12 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK7Logbook")
 
 
 
+
+SWIFT_CLASS("_TtC14DriveQuant_SDK10Pollutants")
+@interface Pollutants : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class RouteData;
 
 SWIFT_PROTOCOL("_TtP14DriveQuant_SDK19PostGenericProtocol_")
@@ -318,6 +330,12 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK6Safety")
 SWIFT_CLASS("_TtC14DriveQuant_SDK13SafetyContext")
 @interface SafetyContext : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC14DriveQuant_SDK8TireWear")
+@interface TireWear : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
