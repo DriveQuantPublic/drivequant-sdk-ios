@@ -229,14 +229,17 @@ SWIFT_PROTOCOL("_TtP14DriveQuant_SDK18DriveQuantProtocol_")
 @class Vehicle;
 @protocol PostGenericProtocol;
 @class NSString;
+@class CLBeaconRegion;
 
 SWIFT_CLASS("_TtC14DriveQuant_SDK22DriveQuantTripAnalysis")
 @interface DriveQuantTripAnalysis : NSObject
 - (void)setVehicle:(Vehicle * _Nonnull)vehicle;
 + (void)initializeSDK:(Account * _Nonnull)account listener:(id <DriveQuantProtocol> _Nonnull)listener;
 + (void)activateAutoStart:(id <PostGenericProtocol> _Nonnull)listener userId:(NSString * _Nonnull)userId vehicle:(Vehicle * _Nonnull)vehicle;
++ (void)activateAutoStart:(id <PostGenericProtocol> _Nonnull)listener userId:(NSString * _Nonnull)userId vehicle:(Vehicle * _Nonnull)vehicle beaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions;
 + (void)deactivateAutoStart;
 + (BOOL)start:(id <PostGenericProtocol> _Nonnull)listener vehicle:(Vehicle * _Nonnull)vehicle SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)start:(id <PostGenericProtocol> _Nonnull)listener vehicle:(Vehicle * _Nonnull)vehicle beaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)stop SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isTripRunning SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
