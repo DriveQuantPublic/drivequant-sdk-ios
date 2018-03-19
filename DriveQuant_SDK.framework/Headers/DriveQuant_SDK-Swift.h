@@ -235,6 +235,7 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK22DriveQuantTripAnalysis")
 @interface DriveQuantTripAnalysis : NSObject
 - (void)setVehicle:(Vehicle * _Nonnull)vehicle;
 + (void)initializeSDK:(Account * _Nonnull)account listener:(id <DriveQuantProtocol> _Nonnull)listener;
++ (void)checkTripToRepost;
 + (void)activateAutoStart:(id <PostGenericProtocol> _Nonnull)listener userId:(NSString * _Nonnull)userId vehicle:(Vehicle * _Nonnull)vehicle;
 + (void)activateAutoStart:(id <PostGenericProtocol> _Nonnull)listener userId:(NSString * _Nonnull)userId vehicle:(Vehicle * _Nonnull)vehicle beaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions;
 + (void)deactivateAutoStart;
@@ -333,6 +334,12 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK6Safety")
 
 SWIFT_CLASS("_TtC14DriveQuant_SDK13SafetyContext")
 @interface SafetyContext : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC14DriveQuant_SDK11SafetyEvent")
+@interface SafetyEvent : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
 
