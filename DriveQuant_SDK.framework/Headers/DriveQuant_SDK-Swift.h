@@ -344,6 +344,12 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK11SafetyEvent")
 @end
 
 
+SWIFT_CLASS("_TtC14DriveQuant_SDK20SharePositionRequest")
+@interface SharePositionRequest : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC14DriveQuant_SDK8TireWear")
 @interface TireWear : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
