@@ -244,6 +244,8 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK22DriveQuantTripAnalysis")
 + (void)deactivateAutoStart;
 + (BOOL)start:(id <PostGenericProtocol> _Nonnull)listener vehicle:(Vehicle * _Nonnull)vehicle SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)start:(id <PostGenericProtocol> _Nonnull)listener vehicle:(Vehicle * _Nonnull)vehicle beaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)start:(id <PostGenericProtocol> _Nonnull)listener vehicle:(Vehicle * _Nonnull)vehicle enableLive:(BOOL)enableLive SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)start:(id <PostGenericProtocol> _Nonnull)listener vehicle:(Vehicle * _Nonnull)vehicle beaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions enableLive:(BOOL)enableLive SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)stop SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isTripRunning SWIFT_WARN_UNUSED_RESULT;
 + (void)disableSDKWithMinutes:(NSInteger)minutes;
