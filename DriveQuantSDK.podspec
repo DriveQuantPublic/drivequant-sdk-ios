@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name           = "DriveQuantSDK"
-  s.version        = "2.1.2-beta3"
+  s.version        = "2.2.0-beta8"
   s.summary        = "DriveQuant iOS SDK"
   s.homepage       = "https://www.drivequant.com"
   s.author         = { "DriveQuant" => "developer@drivequant.com" }

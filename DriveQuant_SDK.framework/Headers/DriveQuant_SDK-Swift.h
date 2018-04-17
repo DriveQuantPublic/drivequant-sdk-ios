@@ -235,6 +235,7 @@ SWIFT_PROTOCOL("_TtP14DriveQuant_SDK18DriveQuantProtocol_")
 SWIFT_CLASS("_TtC14DriveQuant_SDK22DriveQuantTripAnalysis")
 @interface DriveQuantTripAnalysis : NSObject
 - (void)setVehicle:(Vehicle * _Nonnull)vehicle;
+- (void)setEnableSharePos:(BOOL)enableSharePos;
 + (void)initializeSDK:(Account * _Nonnull)account listener:(id <DriveQuantProtocol> _Nonnull)listener;
 + (void)checkTripToRepost;
 + (void)activateAutoStart:(id <PostGenericProtocol> _Nonnull)listener userId:(NSString * _Nonnull)userId vehicle:(Vehicle * _Nonnull)vehicle;
@@ -357,6 +358,12 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK11SafetyEvent")
 @interface SafetyEvent : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC14DriveQuant_SDK20SharePositionRequest")
+@interface SharePositionRequest : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
