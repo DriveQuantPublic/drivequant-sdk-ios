@@ -235,7 +235,7 @@ SWIFT_PROTOCOL("_TtP14DriveQuant_SDK18DriveQuantProtocol_")
 SWIFT_CLASS("_TtC14DriveQuant_SDK22DriveQuantTripAnalysis")
 @interface DriveQuantTripAnalysis : NSObject
 - (void)setVehicle:(Vehicle * _Nonnull)vehicle;
-- (void)setEnableSharePos:(BOOL)enableSharePos;
++ (void)setEnableSharePos:(BOOL)enableSharePos;
 + (void)initializeSDK:(Account * _Nonnull)account listener:(id <DriveQuantProtocol> _Nonnull)listener;
 + (void)checkTripToRepost;
 + (void)activateAutoStart:(id <PostGenericProtocol> _Nonnull)listener userId:(NSString * _Nonnull)userId vehicle:(Vehicle * _Nonnull)vehicle;
