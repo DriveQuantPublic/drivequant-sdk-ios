@@ -315,7 +315,6 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK10Pollutants")
 SWIFT_PROTOCOL("_TtP14DriveQuant_SDK19PostGenericProtocol_")
 @protocol PostGenericProtocol
 - (void)handleResult:(BOOL)status response:(PostGenericResponse * _Nullable)response route:(Route * _Nonnull)route itineraryData:(ItineraryData * _Nonnull)itineraryData;
-- (void)handleRouteData:(double)distance speed:(double)speed accel:(double)accel maintain:(double)maintain decel:(double)decel efficiency:(double)efficiency recommendedGearbox:(NSInteger)recommendedGearbox duration:(double)duration speedMean:(double)speedMean co2:(double)co2 energyClass:(NSInteger)energyClass longitude:(double)longitude latitude:(double)latitude gpsElevation:(double)gpsElevation gpsAccuracy:(double)gpsAccuracy gpsHeading:(double)gpsHeading;
 - (void)handleRouteDataWithRouteData:(RouteData * _Nonnull)routeData;
 - (void)autoTripStarted;
 - (void)tripCancelledWithReason:(NSInteger)reason;
