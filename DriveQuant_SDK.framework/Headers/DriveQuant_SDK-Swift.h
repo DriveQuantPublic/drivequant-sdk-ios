@@ -373,6 +373,13 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK8TireWear")
 @end
 
 
+SWIFT_CLASS("_TtC14DriveQuant_SDK14TripAdviceData")
+@interface TripAdviceData : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
 
 
 SWIFT_CLASS("_TtC14DriveQuant_SDK7Vehicle")
