@@ -238,14 +238,9 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK22DriveQuantTripAnalysis")
 + (void)setEnableSharePos:(BOOL)enableSharePos;
 + (void)initializeSDK:(Account * _Nonnull)account listener:(id <DriveQuantProtocol> _Nonnull)listener recorderListener:(id <PostGenericProtocol> _Nonnull)recorderListener beaconRequired:(BOOL)beaconRequired timeOutDuration:(NSInteger)timeOutDuration;
 + (void)checkTripToRepost;
-+ (void)activateAutoStartWithUserId:(NSString * _Nonnull)userId vehicle:(Vehicle * _Nonnull)vehicle;
 + (void)activateAutoStartWithUserId:(NSString * _Nonnull)userId vehicle:(Vehicle * _Nonnull)vehicle beaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions;
-+ (void)activateAutoStartWithUserId:(NSString * _Nonnull)userId vehicle:(Vehicle * _Nonnull)vehicle enableLive:(BOOL)enableLive;
-+ (void)activateAutoStartWithUserId:(NSString * _Nonnull)userId vehicle:(Vehicle * _Nonnull)vehicle beaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions enableLive:(BOOL)enableLive;
 + (void)deactivateAutoStart;
-+ (BOOL)startWithVehicle:(Vehicle * _Nonnull)vehicle SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)startWithVehicle:(Vehicle * _Nonnull)vehicle beaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions SWIFT_WARN_UNUSED_RESULT;
-+ (BOOL)startWithVehicle:(Vehicle * _Nonnull)vehicle enableLive:(BOOL)enableLive SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)startWithVehicle:(Vehicle * _Nonnull)vehicle beaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions enableLive:(BOOL)enableLive SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)stop SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isTripRunning SWIFT_WARN_UNUSED_RESULT;
