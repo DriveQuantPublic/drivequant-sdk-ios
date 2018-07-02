@@ -237,6 +237,7 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK22DriveQuantTripAnalysis")
 - (void)setVehicle:(Vehicle * _Nonnull)vehicle;
 + (void)setEnableSharePos:(BOOL)enableSharePos;
 + (void)initializeSDK:(Account * _Nonnull)account listener:(id <DriveQuantProtocol> _Nonnull)listener recorderListener:(id <PostGenericProtocol> _Nonnull)recorderListener beaconRequired:(BOOL)beaconRequired timeOutDuration:(NSInteger)timeOutDuration;
++ (void)setTimeoutDurationWithTimeOutDuration:(NSInteger)timeOutDuration;
 + (void)checkTripToRepost;
 + (void)activateAutoStartWithUserId:(NSString * _Nonnull)userId vehicle:(Vehicle * _Nonnull)vehicle beaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions;
 + (void)deactivateAutoStart;
