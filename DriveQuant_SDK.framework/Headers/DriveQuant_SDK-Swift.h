@@ -246,6 +246,8 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK22DriveQuantTripAnalysis")
 + (BOOL)stop SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isTripRunning SWIFT_WARN_UNUSED_RESULT;
 + (void)disableSDKWithMinutes:(NSInteger)minutes;
++ (NSDate * _Nullable)reenableDate SWIFT_WARN_UNUSED_RESULT;
++ (void)reenableAutoMode;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
