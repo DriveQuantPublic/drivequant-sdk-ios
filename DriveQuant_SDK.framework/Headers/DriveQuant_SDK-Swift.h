@@ -312,7 +312,7 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK10Pollutants")
 
 SWIFT_PROTOCOL("_TtP14DriveQuant_SDK19PostGenericProtocol_")
 @protocol PostGenericProtocol
-- (void)handleResult:(BOOL)status response:(PostGenericResponse * _Nullable)response route:(Route * _Nonnull)route itineraryData:(ItineraryData * _Nonnull)itineraryData;
+- (void)handleResult:(BOOL)status response:(PostGenericResponse * _Nullable)response route:(Route * _Nonnull)route itineraryData:(ItineraryData * _Nonnull)itineraryData postTripStatus:(NSInteger)postTripStatus;
 - (void)handleRouteDataWithRouteData:(RouteData * _Nonnull)routeData;
 - (void)autoTripStarted;
 - (void)tripCancelledWithReason:(NSInteger)reason;
