@@ -253,6 +253,13 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK22DriveQuantTripAnalysis")
 @end
 
 
+SWIFT_CLASS("_TtC14DriveQuant_SDK17DriverDistraction")
+@interface DriverDistraction : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC14DriveQuant_SDK10EcoDriving")
 @interface EcoDriving : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
