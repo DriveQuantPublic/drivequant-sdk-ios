@@ -241,6 +241,7 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK22DriveQuantTripAnalysis")
 + (void)checkTripToRepost;
 + (void)activateAutoStartWithUserId:(NSString * _Nonnull)userId vehicle:(Vehicle * _Nonnull)vehicle beaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions;
 + (void)updateBeaconRegionsWithBeaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions;
++ (void)setBeaconRequiredWithBeaconRequired:(BOOL)beaconRequired;
 + (void)deactivateAutoStart;
 + (BOOL)startWithVehicle:(Vehicle * _Nonnull)vehicle beaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)startWithVehicle:(Vehicle * _Nonnull)vehicle beaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions enableLive:(BOOL)enableLive SWIFT_WARN_UNUSED_RESULT;
