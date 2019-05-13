@@ -218,6 +218,13 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK14AdvancedSafety")
 @end
 
 
+SWIFT_CLASS("_TtC14DriveQuant_SDK17AllTripAdviceData")
+@interface AllTripAdviceData : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC14DriveQuant_SDK9BrakeWear")
 @interface BrakeWear : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -382,13 +389,6 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK20SharePositionRequest")
 SWIFT_CLASS("_TtC14DriveQuant_SDK8TireWear")
 @interface TireWear : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC14DriveQuant_SDK14TripAdviceData")
-@interface TripAdviceData : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -624,6 +624,13 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK14AdvancedSafety")
 @end
 
 
+SWIFT_CLASS("_TtC14DriveQuant_SDK17AllTripAdviceData")
+@interface AllTripAdviceData : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC14DriveQuant_SDK9BrakeWear")
 @interface BrakeWear : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -788,13 +795,6 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK20SharePositionRequest")
 SWIFT_CLASS("_TtC14DriveQuant_SDK8TireWear")
 @interface TireWear : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC14DriveQuant_SDK14TripAdviceData")
-@interface TripAdviceData : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
