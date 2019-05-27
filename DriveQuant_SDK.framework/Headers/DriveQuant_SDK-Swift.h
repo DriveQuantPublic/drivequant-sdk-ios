@@ -248,6 +248,7 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK22DriveQuantTripAnalysis")
 @interface DriveQuantTripAnalysis : NSObject
 + (void)setVehicle:(Vehicle * _Nonnull)vehicle;
 + (void)setEnableSharePos:(BOOL)enableSharePos;
++ (void)setBeaconStartDetectionDistance:(NSInteger)distance;
 + (void)initializeSDK:(Account * _Nonnull)account listener:(id <DriveQuantProtocol> _Nonnull)listener recorderListener:(id <PostGenericProtocol> _Nonnull)recorderListener beaconRequired:(BOOL)beaconRequired timeOutDuration:(NSInteger)timeOutDuration;
 + (void)setTimeoutDurationWithTimeOutDuration:(NSInteger)timeOutDuration;
 + (void)checkTripToRepost;
@@ -654,6 +655,7 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK22DriveQuantTripAnalysis")
 @interface DriveQuantTripAnalysis : NSObject
 + (void)setVehicle:(Vehicle * _Nonnull)vehicle;
 + (void)setEnableSharePos:(BOOL)enableSharePos;
++ (void)setBeaconStartDetectionDistance:(NSInteger)distance;
 + (void)initializeSDK:(Account * _Nonnull)account listener:(id <DriveQuantProtocol> _Nonnull)listener recorderListener:(id <PostGenericProtocol> _Nonnull)recorderListener beaconRequired:(BOOL)beaconRequired timeOutDuration:(NSInteger)timeOutDuration;
 + (void)setTimeoutDurationWithTimeOutDuration:(NSInteger)timeOutDuration;
 + (void)checkTripToRepost;
