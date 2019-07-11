@@ -241,8 +241,6 @@ SWIFT_PROTOCOL("_TtP14DriveQuant_SDK18DriveQuantProtocol_")
 
 @class Vehicle;
 @protocol PostGenericProtocol;
-@class NSString;
-@class CLBeaconRegion;
 
 SWIFT_CLASS("_TtC14DriveQuant_SDK22DriveQuantTripAnalysis")
 @interface DriveQuantTripAnalysis : NSObject
@@ -252,12 +250,8 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK22DriveQuantTripAnalysis")
 + (BOOL)isInitialized SWIFT_WARN_UNUSED_RESULT;
 + (void)setTimeoutDurationWithTimeOutDuration:(NSInteger)timeOutDuration;
 + (void)checkTripToRepost;
-+ (void)activateAutoStartWithUserId:(NSString * _Nonnull)userId vehicle:(Vehicle * _Nonnull)vehicle beaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions;
-+ (void)updateBeaconRegionsWithBeaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions;
 + (void)setBeaconRequiredWithBeaconRequired:(BOOL)beaconRequired;
 + (void)deactivateAutoStart;
-+ (BOOL)startWithVehicle:(Vehicle * _Nonnull)vehicle beaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions SWIFT_WARN_UNUSED_RESULT;
-+ (BOOL)startWithVehicle:(Vehicle * _Nonnull)vehicle beaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions enableLive:(BOOL)enableLive SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)stop SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isTripRunning SWIFT_WARN_UNUSED_RESULT;
 + (void)disableSDKWithMinutes:(NSInteger)minutes;
@@ -648,8 +642,6 @@ SWIFT_PROTOCOL("_TtP14DriveQuant_SDK18DriveQuantProtocol_")
 
 @class Vehicle;
 @protocol PostGenericProtocol;
-@class NSString;
-@class CLBeaconRegion;
 
 SWIFT_CLASS("_TtC14DriveQuant_SDK22DriveQuantTripAnalysis")
 @interface DriveQuantTripAnalysis : NSObject
@@ -659,12 +651,8 @@ SWIFT_CLASS("_TtC14DriveQuant_SDK22DriveQuantTripAnalysis")
 + (BOOL)isInitialized SWIFT_WARN_UNUSED_RESULT;
 + (void)setTimeoutDurationWithTimeOutDuration:(NSInteger)timeOutDuration;
 + (void)checkTripToRepost;
-+ (void)activateAutoStartWithUserId:(NSString * _Nonnull)userId vehicle:(Vehicle * _Nonnull)vehicle beaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions;
-+ (void)updateBeaconRegionsWithBeaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions;
 + (void)setBeaconRequiredWithBeaconRequired:(BOOL)beaconRequired;
 + (void)deactivateAutoStart;
-+ (BOOL)startWithVehicle:(Vehicle * _Nonnull)vehicle beaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions SWIFT_WARN_UNUSED_RESULT;
-+ (BOOL)startWithVehicle:(Vehicle * _Nonnull)vehicle beaconRegions:(NSArray<CLBeaconRegion *> * _Nullable)beaconRegions enableLive:(BOOL)enableLive SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)stop SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isTripRunning SWIFT_WARN_UNUSED_RESULT;
 + (void)disableSDKWithMinutes:(NSInteger)minutes;
